@@ -9,7 +9,11 @@
       var rollIntOne = parseInt(rollOne);
       var rollIntTwo = parseInt(rollTwo);
 
-      console.log(rollIntOne + rollIntTwo);
+      if (rollIntOne > 6 || rollIntOne < 1 || rollIntTwo > 6 || rollIntTwo < 1) {
+        alert("Numbers have to be 1-6");
+      } else {
+        console.log(rollIntOne + rollIntTwo);
+      }
     </script>
     <title>Add Dice</title>
   </head>
