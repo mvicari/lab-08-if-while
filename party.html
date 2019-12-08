@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <script type="text/javascript">
-      var p = prompt("How long 'til the party?");
-      var pInt = parseInt(p, 10);
 
-      for(var pInt; pInt >= 1; pInt = pInt - 1 ) {
-      console.log(pInt)
-    }
-    </script>
-    <title>Party Time</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+    alert("Let's party...");
+    var p = prompt("How long 'til the party?");
+    var pInt = parseInt(p, 10);
 
-  </body>
+    if (pInt <= 0) {
+      alert("PARTY NOW!!!");
+    } else
+      for (var pInt; pInt >= 1; pInt = pInt - 1) {
+        console.log(pInt)
+      }
+    console.log("PARTY TIME!!!");
+  </script>
+  <title>Party Time</title>
+</head>
+
+<body>
+
+</body>
+
 </html>
